@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-islower = __import__('7-islower').islower
 def islower(c):
-    if 97 <= ord(c) <= 122:
-        return True
-    else:
-        return False
+    """Return True if c is lowercase, False otherwise"""
+    return ord('a') <= ord(c) <= ord('z')
