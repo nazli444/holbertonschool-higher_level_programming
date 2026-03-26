@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 from calculator_1 import add,sub,mul,div
-if __name__ = "__main__":
+if __name__ == "__main__":
     """a:first integer"""
     a = 10
     """b:second integer"""
