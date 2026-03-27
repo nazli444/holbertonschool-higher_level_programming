@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
+    n = []
     for k in my_list:
-        n = []
         if k == search:
             n.append(replace)
         else:
