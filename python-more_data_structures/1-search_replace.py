@@ -5,5 +5,5 @@ def search_replace(my_list, search, replace):
         if k == search:
             n.append(replace)
         else:
-            n.append(search)
+            n.append(k)
     return n
