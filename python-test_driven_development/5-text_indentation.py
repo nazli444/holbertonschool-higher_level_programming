@@ -20,12 +20,10 @@ def text_indentation(text):
         char = text[i]
         buffer += char
         if char in ".?:":
-            # Strip leading/trailing spaces before printing
-            print(buffer.strip())
-            print()  # extra newline
+            print(buffer.strip(), end="\n\n")
+            print()
             buffer = ""
         i += 1
 
-    # Print remaining text if any
     if buffer.strip():
-        print(buffer.strip())
+        print(buffer.strip(), end="")
