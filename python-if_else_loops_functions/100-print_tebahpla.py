@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-for i in range(25, -1, -1):
-    print("{}".format(chr(122 - i) if i % 2 == 0 else chr(65 + i)), end="")
+for i in range(ord('z'), ord('a') - 1, -1):
+    if i % 2 == 0:
+        char = i
+    else:
+        char = i - 32
+    print("{:c}".format(char), end="")
