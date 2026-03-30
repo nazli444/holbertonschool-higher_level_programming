@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-import os
-os.write(1, bytes(range(65, 91)) + b"\n")
+print(*[chr(i) for i in range(65, 91)])
