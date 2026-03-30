@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module that defines a square based on 4-square.py"""
+
+
 class Square:
     """Defines a square with private size attribute."""
 
