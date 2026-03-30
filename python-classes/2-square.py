@@ -3,18 +3,21 @@
 
 
 class Square:
-    """Defines a square with validated private size attribute."""
+    """Represents a square."""
 
     def __init__(self, size=0):
-        """Initialize square with optional size (with validation)."""
-        self.size = size
-    def size(self):
-        """Retrieve the size."""
-        return self.__size
-    def size(self, value):
-        """Set the size with validation."""
-        if not isinstance(value, int):
+        """
+        Initialize a new square.
+
+        Args:
+            size (int): The size of the new square.
+
+        Raises:
+            TypeError: If size is not an integer.
+            ValueError: If size is less than 0.
+        """
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        if value < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
-        self.__size = value
+        self.__size = size
