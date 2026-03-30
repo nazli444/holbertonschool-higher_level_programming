@@ -7,8 +7,8 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """Initialize square with optional size and position."""
-        self.size = size          # setter çağırılır
-        self.position = position  # setter çağırılır
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -47,10 +47,7 @@ class Square:
         if self.__size == 0:
             print()
             return
-
-        # print vertical offset
         for _ in range(self.__position[1]):
             print()
-        # print each line of the square with horizontal offset
         for _ in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
