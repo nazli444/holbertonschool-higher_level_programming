@@ -10,12 +10,10 @@ class Shape(ABC):
 
     @abstractmethod
     def area(self):
-        """Calculate area"""
         pass
 
     @abstractmethod
     def perimeter(self):
-        """Calculate perimeter"""
         pass
 
 
@@ -23,7 +21,7 @@ class Circle(Shape):
     """Circle shape"""
 
     def __init__(self, radius):
-        self.radius = radius
+        self.radius = abs(radius)   # 🔥 FIX: negative radius fix
 
     def area(self):
         return math.pi * (self.radius ** 2)
