@@ -1,4 +1,9 @@
--- Create database hbtn_0d_usa if it does not exist
+-- Create database if it does not exist
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
--- Create table states if it does not exist
-CREATE TABLE IF NOT EXISTS hbtn_0d_usa.states(id INT NULL AUTO_INCREMENT, name VARCHAR(256) NOT NULL, PRIMARY KEY (id));
+
+-- Create table inside database
+CREATE TABLE IF NOT EXISTS hbtn_0d_usa.states (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(256) NOT NULL,
+    PRIMARY KEY (id)
+);
