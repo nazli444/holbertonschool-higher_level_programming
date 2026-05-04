@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# This script connects to a MySQL database and prints all states ordered by id
+"""This script connects to a MySQL database and prints all states ordered by id"""
 import MySQLdb
 import sys
 if __name__ == "__main__":
